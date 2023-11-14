@@ -1,0 +1,7 @@
+{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+    <!-- footer -->
+<div>
+    {{render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+</div>
+{% include "footer.html" %}

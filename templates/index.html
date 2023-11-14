@@ -1,0 +1,10 @@
+{% include "header.html" %}
+    <main class="main">
+      <div class="row">
+          {% for product in products: %}
+            <div class="col-6 col-md-4 w-25 p-3"><img src="{{product[6]}}" class="img-thumbnail"  alt="pic">price {{product[5]}}rs</div>
+          {% endfor %}
+      </div>
+    </main>
+    <!-- footer -->
+    {% include "footer.html" %}
